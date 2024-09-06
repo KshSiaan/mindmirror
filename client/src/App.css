@@ -1,0 +1,28 @@
+
+.three-d-game-table{
+    transform: perspective(1000px) rotateX(30deg) translateY(-40px);
+}
+.card-container{
+    perspective: 400px;
+}
+.revealed{
+    transform:rotateY(0deg);
+} 
+
+.card{
+    transition: transform 0.3s;
+    transform-style: preserve-3d;
+    transform: rotateY(-180deg);
+    
+}
+.front, .back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    
+}
+.back {
+  transform: rotateY(180deg);
+
+}
