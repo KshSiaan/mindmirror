@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const User = require("../model/userModel");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 
 function handleError(err) {
   let error = { email: "", pass: "" };
